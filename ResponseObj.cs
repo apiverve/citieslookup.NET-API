@@ -1,21 +1,64 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
+using Newtonsoft.Json;
 
 namespace APIVerve
 {
-    using Newtonsoft.Json;
+public class loc
+{
+    [JsonProperty("type")]
+    public string type { get; set; }
+
+    [JsonProperty("coordinates")]
+    public double[] coordinates { get; set; }
+
+}
+
+public class foundCities
+{
+    [JsonProperty("cityId")]
+    public int cityId { get; set; }
+
+    [JsonProperty("name")]
+    public string name { get; set; }
+
+    [JsonProperty("altName")]
+    public string altName { get; set; }
+
+    [JsonProperty("country")]
+    public string country { get; set; }
+
+    [JsonProperty("featureCode")]
+    public string featureCode { get; set; }
+
+    [JsonProperty("population")]
+    public int population { get; set; }
+
+    [JsonProperty("loc")]
+    public loc loc { get; set; }
+
+}
+
+public class data
+{
+    [JsonProperty("search")]
+    public string search { get; set; }
+
+    [JsonProperty("foundCities")]
+    public foundCities[] foundCities { get; set; }
+
+}
 
 public class ResponseObj
 {
     [JsonProperty("status")]
-    public string Status { get; set; }
+    public string status { get; set; }
 
     [JsonProperty("error")]
-    public string Error { get; set; }
+    public object error { get; set; }
 
     [JsonProperty("data")]
-    public object Data { get; set; }
+    public data data { get; set; }
 
 }
 
