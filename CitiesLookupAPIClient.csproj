@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.CitiesLookup</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/citieslookup</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Cities Lookup is a simple tool for looking up city data. It returns the city name, population, and more.</Description>
+    <RepositoryUrl>https://github.com/apiverve/citieslookup-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>cities lookup; city lookup; cities data; city data; cities lookup api; city lookup api; cities lookup tool; city lookup tool; cities lookup software; city lookup software; cities lookup service; city lookup service; cities lookup library; city lookup library; cities lookup sdk; city lookup sdk; cities lookup code; city lookup code; cities lookup script; city lookup script; cities lookup program; city lookup program; cities lookup application; city lookup application; cities lookup app; city lookup app; cities lookup tool; city lookup tool; cities lookup utility; city lookup utility; cities lookup helper; city lookup helper; cities lookup helper tool; city lookup helper tool; cities lookup helper software; city lookup helper software; cities lookup helper service; city lookup helper service; cities lookup helper library; city lookup helper library; cities lookup helper sdk; city lookup helper sdk; cities lookup helper code; city lookup helper code; cities lookup helper script; city lookup helper script; cities lookup helper program; city lookup helper program; cities lookup helper application; city lookup helper application; cities lookup helper app; city lookup helper app; cities lookup helper tool; city lookup helper tool; cities lookup helper utility; city lookup helper utility; cities lookup helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
