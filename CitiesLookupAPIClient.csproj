@@ -1,38 +1,69 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>enable</Nullable>
+    <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>APIVerve.API.CitiesLookup</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.5</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <IncludeContentInPack>true</IncludeContentInPack>
+
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageProjectUrl>https://apiverve.com/marketplace/api/citieslookup</PackageProjectUrl>
+    <PackageProjectUrl>https://apiverve.com/?utm_source=nuget</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
     <Description>Cities Lookup is a simple tool for looking up city data. It returns the city name, population, and more.</Description>
-    <RepositoryUrl>https://github.com/apiverve/citieslookup-NET</RepositoryUrl>
+    <RepositoryUrl>https://github.com/apiverve/citieslookup.NET-API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>cities lookup; city lookup; cities data; city data; cities lookup api; city lookup api; cities lookup tool; city lookup tool; cities lookup software; city lookup software; cities lookup service; city lookup service; cities lookup library; city lookup library; cities lookup sdk; city lookup sdk; cities lookup code; city lookup code; cities lookup script; city lookup script; cities lookup program; city lookup program; cities lookup application; city lookup application; cities lookup app; city lookup app; cities lookup tool; city lookup tool; cities lookup utility; city lookup utility; cities lookup helper; city lookup helper; cities lookup helper tool; city lookup helper tool; cities lookup helper software; city lookup helper software; cities lookup helper service; city lookup helper service; cities lookup helper library; city lookup helper library; cities lookup helper sdk; city lookup helper sdk; cities lookup helper code; city lookup helper code; cities lookup helper script; city lookup helper script; cities lookup helper program; city lookup helper program; cities lookup helper application; city lookup helper application; cities lookup helper app; city lookup helper app; cities lookup helper tool; city lookup helper tool; cities lookup helper utility; city lookup helper utility; cities lookup helper</PackageTags>
+    <PackageTags>cities lookup; city lookup; cities data; city data; cities lookup api</PackageTags>
     <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <PackageIcon>favicon@128.png</PackageIcon>
+    <BaseOutputPath>.\bin</BaseOutputPath>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <PackageId>APIVerve.API.CitiesLookup</PackageId>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <None Remove="LICENSE" />
+    <None Remove="Readme.md" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="LICENSE">
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Media\favicon@128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="Readme.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
