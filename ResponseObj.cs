@@ -16,9 +16,6 @@ public class loc
 
 public class foundCities
 {
-    [JsonProperty("cityId")]
-    public int cityId { get; set; }
-
     [JsonProperty("name")]
     public string name { get; set; }
 
