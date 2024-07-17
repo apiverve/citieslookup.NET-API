@@ -97,7 +97,6 @@ if(response.error != null) {
     "search": "San Francisco",
     "foundCities": [
       {
-        "cityId": 5391959,
         "name": "San Francisco",
         "altName": "",
         "country": "US",
@@ -112,7 +111,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3493146,
         "name": "San Francisco de Macorís",
         "altName": "",
         "country": "DO",
@@ -124,12 +122,9 @@ if(response.error != null) {
             -70.25259,
             19.30099
           ]
-        },
-        "muni": "060101",
-        "muniSub": "06010101"
+        }
       },
       {
-        "cityId": 3986984,
         "name": "San Francisco del Rincón",
         "altName": "",
         "country": "MX",
@@ -144,7 +139,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 5397765,
         "name": "South San Francisco",
         "altName": "",
         "country": "US",
@@ -159,7 +153,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3837675,
         "name": "San Francisco",
         "altName": "",
         "country": "AR",
@@ -174,7 +167,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3621911,
         "name": "San Francisco",
         "altName": "",
         "country": "CR",
@@ -186,11 +178,9 @@ if(response.error != null) {
             -84.12934,
             9.99299
           ]
-        },
-        "muni": "40103"
+        }
       },
       {
-        "cityId": 3590219,
         "name": "San Francisco El Alto",
         "altName": "",
         "country": "GT",
@@ -205,7 +195,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3519290,
         "name": "San Francisco Acuautla",
         "altName": "",
         "country": "MX",
@@ -220,7 +209,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3827263,
         "name": "San Francisco Cuaxusco",
         "altName": "",
         "country": "MX",
@@ -235,7 +223,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3519249,
         "name": "San Francisco Tlalcilalcalpan",
         "altName": "",
         "country": "MX",
@@ -250,7 +237,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3583747,
         "name": "San Francisco",
         "altName": "",
         "country": "SV",
@@ -265,7 +251,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3986985,
         "name": "San Francisco de los Romo",
         "altName": "",
         "country": "MX",
@@ -280,7 +265,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3590197,
         "name": "San Francisco Zapotitlán",
         "altName": "",
         "country": "GT",
@@ -295,7 +279,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3522454,
         "name": "San Francisco Ocotlán",
         "altName": "",
         "country": "MX",
@@ -310,7 +293,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 8858142,
         "name": "San Francisco Tecoxpa",
         "altName": "",
         "country": "MX",
@@ -325,7 +307,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3519255,
         "name": "San Francisco Telixtlahuaca",
         "altName": "",
         "country": "MX",
@@ -340,7 +321,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3519250,
         "name": "San Francisco Tetlanohcan",
         "altName": "",
         "country": "MX",
@@ -355,7 +335,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3530852,
         "name": "San Francisco Chimalpa",
         "altName": "",
         "country": "MX",
@@ -370,7 +349,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3706575,
         "name": "Altos de San Francisco",
         "altName": "",
         "country": "PA",
@@ -385,7 +363,6 @@ if(response.error != null) {
         }
       },
       {
-        "cityId": 3519243,
         "name": "San Francisco Zacacalco",
         "altName": "",
         "country": "MX",
