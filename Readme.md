@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new citieslookupQueryOptions {
+var queryOptions = new CitiesLookupQueryOptions {
   city = "San Francisco"
 };
 ```
@@ -377,7 +377,8 @@ if(response.error != null) {
         }
       }
     ]
-  }
+  },
+  "code": 200
 }
 ```
 
