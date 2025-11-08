@@ -4,62 +4,67 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class loc
-{
-    [JsonProperty("type")]
-    public string type { get; set; }
+    /// <summary>
+    /// Loc data
+    /// </summary>
+    public class Loc
+    {
+        [JsonProperty("type")]
+        public string Type { get; set; }
 
-    [JsonProperty("coordinates")]
-    public double[] coordinates { get; set; }
+        [JsonProperty("coordinates")]
+        public double[] Coordinates { get; set; }
 
-}
+    }
+    /// <summary>
+    /// FoundCities data
+    /// </summary>
+    public class FoundCities
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
 
-public class foundCities
-{
-    [JsonProperty("name")]
-    public string name { get; set; }
+        [JsonProperty("altName")]
+        public string AltName { get; set; }
 
-    [JsonProperty("altName")]
-    public string altName { get; set; }
+        [JsonProperty("country")]
+        public string Country { get; set; }
 
-    [JsonProperty("country")]
-    public string country { get; set; }
+        [JsonProperty("featureCode")]
+        public string FeatureCode { get; set; }
 
-    [JsonProperty("featureCode")]
-    public string featureCode { get; set; }
+        [JsonProperty("population")]
+        public int Population { get; set; }
 
-    [JsonProperty("population")]
-    public int population { get; set; }
+        [JsonProperty("loc")]
+        public Loc Loc { get; set; }
 
-    [JsonProperty("loc")]
-    public loc loc { get; set; }
+    }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("search")]
+        public string Search { get; set; }
 
-}
+        [JsonProperty("foundCities")]
+        public FoundCities[] FoundCities { get; set; }
 
-public class data
-{
-    [JsonProperty("search")]
-    public string search { get; set; }
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-    [JsonProperty("foundCities")]
-    public foundCities[] foundCities { get; set; }
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-}
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
-
-    [JsonProperty("error")]
-    public object error { get; set; }
-
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }
